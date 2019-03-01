@@ -38,6 +38,7 @@ static off_t hex2l( const string &str );
 %}
 
 %option noyywrap
+%option never-interactive
 
 hexnum   [0-9a-fA-F]+
 

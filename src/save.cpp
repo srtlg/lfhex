@@ -19,7 +19,7 @@
 #include <errno.h>
 #include <string>
 #include <vector>
-#include <qmessagebox.h>
+#include <QMessageBox>
 #include <sys/types.h>
 
 #include "translate.hpp"

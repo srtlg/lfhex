@@ -17,14 +17,14 @@
  */
 
 #include <QFileDialog>
-#include <qsizepolicy.h>
-#include <qstatusbar.h>
-#include <qmenubar.h>
-#include <qapplication.h>
-#include <qscrollbar.h>
-#include <qstring.h>
-#include <qmessagebox.h>
-#include <qlineedit.h>
+#include <QSizePolicy>
+#include <QStatusBar>
+#include <QMenuBar>
+#include <QApplication>
+#include <QScrollBar>
+#include <QString>
+#include <QMessageBox>
+#include <QLineEdit>
 #include <QDockWidget>
 #include <QLabel>
 #include <QCloseEvent>

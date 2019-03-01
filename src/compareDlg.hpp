@@ -19,7 +19,6 @@
  */
 
 #include <QMainWindow>
-#include <list>
 #include "local.h"
 // forward decl to speed compile times
 class QCheckBox;

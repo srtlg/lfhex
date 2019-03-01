@@ -57,5 +57,6 @@ exprerror(
    const char * str
    )
 {
+   (void)str;
    return 0;
 }

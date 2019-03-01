@@ -55,6 +55,7 @@ DISTFILES += ../README \
              img/last.xbm \
              img/next.xbm \
              img/prev.xbm
+QT += widgets
 # Uncomment this to compile in debug mode
 # CONFIG += debug
 

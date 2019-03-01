@@ -3,13 +3,14 @@
 lfhex uses "qmake" for build management.
 
 Requirements:
-- You must have Qt 4.x or latter to compile/link lfhex.
+- You must have Qt 5.x or latter to compile/link lfhex.
 - You must have a compiler which is sane when using templates.
 - You must have flex and bison
 
 Build Instructions:
 % gunzip -c lfhex-x.x.tar.gz | tar xvf -
 % cd lfhex-x.x
+% cd src
 % qmake lfhex.pro
 % make 
 % su

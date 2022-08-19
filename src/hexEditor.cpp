@@ -689,8 +689,8 @@ void HexEditor::resizeEvent( QResizeEvent * e )
   _cols = max(1,(e->size().width() - _leftMargin)/totalWordWidth);
   
   // now update the line && word bbox vectors
-  _lineBBox.reserve(_rows);
-  _wordBBox.reserve(_rows*_cols);
+  _lineBBox.resize(_rows);
+  _wordBBox.resize(_rows*_cols);
   int top,left;
   for(int r = 0; r < _rows; r++) {
     top = r*height + _topMargin;

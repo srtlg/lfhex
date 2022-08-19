@@ -1,6 +1,6 @@
 # $Id: lfhex.pro,v 1.2 2008-09-11 01:49:00 salem Exp $
 TARGET  = lfhex
-VERSION = 0.42
+VERSION = 0.43
 TEMPLATE = app
 SOURCES = reader.cpp \
           save.cpp \
@@ -44,7 +44,6 @@ YACCSOURCES += expr.y
 LEXSOURCES += expr.l
 QMAKE_LEX  = flex
 QMAKE_YACC = bison
-QMAKE_YACCFLAGS = -d -b expr -p expr
 DISTFILES += ../README \
              ../README.install \
              ../COPYING \

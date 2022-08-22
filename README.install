@@ -11,7 +11,8 @@ Build Instructions:
 % gunzip -c lfhex-x.x.tar.gz | tar xvf -
 % cd lfhex-x.x
 % cd src
-% qmake lfhex.pro
+% qmake-qt5 lfhex.pro
+% sed -e '/expr\.tab\.h/ s:.(MOVE) :cp -p :g' -i 'Makefile'
 % make 
 % su
 % make install

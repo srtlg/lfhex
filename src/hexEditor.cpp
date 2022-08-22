@@ -780,7 +780,7 @@ void HexEditor::paintEvent( QPaintEvent* e)
   // set up painter;/
   paint.setFont(font());
   const QPalette& p = qApp->palette();
-  paint.setBrush(p.background());
+  paint.setBrush(p.window());
 
   if( _labelBBox.intersects(e->rect()) ) {
     paintLabels(&paint);
@@ -1052,7 +1052,7 @@ void HexEditor::drawTextRegion( QPainter& paint, const QString& text,
 				int row_start, int row_stop,
 				int col_start, int col_stop )
 {
-  paint.setPen(qApp->palette().foreground().color());
+  paint.setPen(qApp->palette().windowText().color());
   for(int r = row_start; r <= row_stop; r++) {
     for(int c = col_start; c <= col_stop; c++) {
       int widx = r*_cols+c;
@@ -1061,7 +1061,7 @@ void HexEditor::drawTextRegion( QPainter& paint, const QString& text,
 	paint.drawText( _wordBBox[widx].left() + wordSpacing()/2,
 			_wordBBox[widx].bottom(),
 			text.mid(widx*charsPerWord(),charsPerWord()) );
-	paint.setPen(qApp->palette().foreground().color());
+	paint.setPen(qApp->palette().windowText().color());
       } else {
 	paint.drawText( _wordBBox[widx].left() + wordSpacing()/2,
 			_wordBBox[widx].bottom(),

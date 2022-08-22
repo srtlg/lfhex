@@ -162,7 +162,7 @@ size_t Reader::read(vector<uchar>& v, size_t numBytes)
     try {
       loadPage( page );
     } 
-    catch (bad_alloc){
+    catch (const bad_alloc & e){
       // out of memory
       _error = "Out of memory.";
       // return the number of bytes read

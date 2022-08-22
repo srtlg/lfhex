@@ -56,7 +56,7 @@ class Reader {
   bool eof();
   bool is_open() const;
   
-  size_t read( ReadBuffer& v, size_t numBytes );
+  size_t read( ReadBuffer& v, int numBytes );
   off_t  seek( off_t offset );
   off_t tell() const; // returns the current offset or -1 if !open
   off_t size() const;

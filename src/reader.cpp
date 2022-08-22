@@ -129,7 +129,7 @@ bool Reader::is_open() const
   return _is_open;
 }
 
-size_t Reader::read(vector<uchar>& v, size_t numBytes)
+size_t Reader::read(vector<uchar>& v, int numBytes)
 {
   int lastPageIdx = 0;
   size_t bytesRead;

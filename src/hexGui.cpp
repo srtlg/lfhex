@@ -122,16 +122,16 @@ HexGui::HexGui (QWidget * p)
 
   resize(400,196);
   statusBar()->showMessage("Ready",2000);
-  statusBar()->addWidget(new QLabel("Cursor Offset:",statusBar()));
+  statusBar()->addPermanentWidget(new QLabel("Cursor Offset:",statusBar()));
   offsetLineEdit = new QLineEdit(statusBar());
 //  offsetLineEdit->setValidator( new HexValidator(offsetLineEdit) );
   connect(offsetLineEdit,SIGNAL(returnPressed()),
 	  SLOT(setOffsetFromStatusBar()));
-  statusBar()->addWidget(offsetLineEdit);
+  statusBar()->addPermanentWidget(offsetLineEdit);
   //  progressBar = new QProgressBar(statusBar());
   //  statusBar()->addWidget(progressBar,1,FALSE);
   statusLabel = new QLabel("",statusBar());
-  statusBar()->addWidget(statusLabel,1);
+  statusBar()->addPermanentWidget(statusLabel,1);
   statusBar()->setSizeGripEnabled( !parent() );
   setWindowTitle(PROGRAM_STRING);
 

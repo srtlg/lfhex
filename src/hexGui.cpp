@@ -242,14 +242,7 @@ void HexGui::setScrollBarValue(off_t pos)
 }
 void HexGui::setOffsetLabel(off_t pos)
 {
-  QString label;
-  char    buffer[64];
-#if _LARGEFILE_SOURCE
-  sprintf(buffer,"0x%lx",pos);
-#else
-  sprintf(buffer,"0x%x",pos);
-#endif
-  label = buffer;
+  QString label = QString("0x%1").arg(pos, 0, 16);
   offsetLineEdit->setText(label);
 }
 

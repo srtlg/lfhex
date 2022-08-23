@@ -129,7 +129,7 @@ hex2l(
       break;
       default: 
         char buf[1024];
-        sprintf(buf,"Unknown hex char: \"%s\"[%d]",str.c_str(),i);
+        snprintf(buf,sizeof buf,"Unknown hex char: \"%s\"[%d]",str.c_str(),i);
         throw runtime_error(buf);
     }
     --i;

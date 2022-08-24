@@ -36,7 +36,8 @@ Limitations:
   1sec/Meg and is almost 3x slower if progressbar pops up).
 - comparison mode is not allowed if either buffer has unsaved modifications.
 
-Additional documentation can be found at http://stoopidsimple.com/lfhex/manual
+Additional documentation can be found at
+https://web.archive.org/web/20131027225206/http://stoopidsimple.com/lfhex/manual
 
 License:
 This software is licensed under the GPL Version 2.
